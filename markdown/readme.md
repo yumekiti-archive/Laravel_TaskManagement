@@ -1,8 +1,9 @@
 ## 概要
-- １階
-  - やること（順番）（重要度）(複雑さ)
-- ２階
-  - やること（順番）（重要度）(複雑さ)
+- １号館
+  - １階
+    - やること（順番）（重要度）(複雑さ)
+  - ２階
+    - やること（順番）（重要度）(複雑さ)
 
 ## テーブル
 
@@ -21,6 +22,7 @@
 | task_id | bigIncrements |
 | limit | time |
 | building | bigIncrements |
+| floor | bigIncrements |
 | timestamps | timestamps |
 
 ### templates（テンプレート）

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreign('task_id')->references('id')->on('tasks');
             $table->time('limit');
             $table->bigIncrements('building');
+            $table->bigIncrements('floor');
             $table->timestamps();
         });
     }
