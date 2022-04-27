@@ -17,8 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('task_id');
             $table->foreign('task_id')->references('id')->on('tasks');
             $table->time('limit');
-            $table->bigIncrements('building');
-            $table->bigIncrements('floor');
+            $table->boolean('status')->default(false);
+            $table->integer('building');
+            $table->integer('floor');
             $table->timestamps();
         });
     }

@@ -21,8 +21,9 @@
 |-|-|
 | task_id | bigIncrements |
 | limit | time |
-| building | bigIncrements |
-| floor | bigIncrements |
+| status | boolean |
+| building | integer |
+| floor | integer |
 | timestamps | timestamps |
 
 ### templates（テンプレート）
