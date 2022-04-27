@@ -15,21 +15,18 @@
 | complexity | biginteger |
 | importance | biginteger |
 
-### buildings（何号館）
-| name | type |
-|-|-|
-| id | bigIncrements |
-| body | string |
-
 ### management（現状態）
 | name | type |
 |-|-|
-| taskid | bigIncrements |
+| task_id | bigIncrements |
 | limit | time |
-| building_id | bigIncrements |
+| building | bigIncrements |
+| timestamps | timestamps |
 
 ### templates（テンプレート）
 | name | type |
 |-|-|
+| id | bigIncrements |
 | title | string |
 | body | json |
+| timestamps | timestamps |
